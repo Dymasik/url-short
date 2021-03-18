@@ -1,0 +1,11 @@
+<div *ngIf="errorMessage !== ''" style="color: red;">
+    Error: 
+    {{ errorMessage }}
+</div>
+<div>
+    <ul>
+        <li *ngFor="let url of urls">
+            {{ url.Url }} ---- {{ url.ShortUrl }}
+        </li>
+    </ul>
+</div>
